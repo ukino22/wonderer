@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/fontello.css">
+    <link rel="stylesheet" href="/CSS/contacto.css">
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="./imagenes/suitcase.ico">
+    <!-- datos de Open Graph -->
+    <meta property="og:title" content="Wonderer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.conociendoelmundo.com.ar" />
+    <meta property="og:image" content="https://iili.io/H8aT8mP.png" />
+    <meta property="og:description" content="Descubrí el mundo. Está a un paso de distancia..." />
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <h1>Contacto</h1> 
+            <label class="icon-menu-outline" for="menu-bar"></label>
+            <input type="checkbox" id="menu-bar">
+            <nav class="menu">
+                <a href="nosotros.html">Nostros</a>
+                <div class="separador"></div>
+                <a href="servicios.html">Servicios</a>
+                <div class="separador"></div>
+                <a href="galeria.html">Galería</a>
+                <div class="separador"></div>
+                <a href="contacto.html">Contacto</a>
+                <div class="separador"></div>
+                <a href="index.html">Inicio</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="contacto">
+        <form class="contact_form" action="enviar.php" method="post">
+            <ul>
+                <li>
+                    <h2>Nuevo Formulario de Contacto</h2>
+                </li>
+                <li>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" placeholder="Ingrese su nombre" required />
+
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="email@dominio.com" requierd>
+                </li>
+                <li>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" cols="40" rows="6" required></textarea>
+                </li>
+                <li>
+                    <button class="submit" type="submit">Enviar</button>
+                </li>
+            </ul>
+        </form>
+    </section>
+
+    
+    <footer>
+        <div class="contenedor">
+            <p class="copy">Wings Travel &copy; 2023</p>
+            <div class="sociales">
+                <a href="https://facebook.com" class="social-icon" target="_blank"><img src="imagenes/icons8-facebook-100.svg" alt="Facebook link"></a>
+                <a href="https://twitter.com" class="social-icon" target="_blank"><img src="imagenes/icons8-twitter-100.svg" alt="Twitter link"></a>
+                <a href="https://www.instagram.com" class="social-icon" target="_blank"><img src="imagenes/icons8-instagram-100.svg" alt="Instagram link"></a>
+                <a href="https://www.google.com" class="social-icon" target="_blank"><img src="imagenes/icons8-google-plus-64.svg" alt="Google plus link"></a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

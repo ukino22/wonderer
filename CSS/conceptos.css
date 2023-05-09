@@ -1,0 +1,38 @@
+
+#conceptos .contenedor {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#conceptos article {
+    margin: 15px;
+    max-width: 280px;
+    /* overflow: hidden; */
+}
+
+#conceptos img {
+    width: 100%;
+    border-radius: 10%;
+    box-shadow: 5px 5px 8px black;
+}
+
+#conceptos video {
+    max-width: 280px;
+    border-radius: 10%;
+    box-shadow: 5px 5px 8px black;
+}
+
+h3, h4 {
+    text-align: center;
+}
+
+@media(min-width: 650px) {
+    #conceptos video {
+        max-width: 260px;
+    }
+}

@@ -1,0 +1,70 @@
+
+header {
+    width: 100%;
+    height: 50px;
+    background: #118c4e;
+    color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100; 
+    /* z-index es la capa. El valor 100 hace que el resto de los elementos vayan por detrás del header. Puede tener valores negativos. */
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    /* "vh" hace referencia al viewport height, la altura del dispositivo */
+    background: rgba(17, 140, 78, .85);
+    border-top: 1px solid white ;
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+/* .menu a significa elementos de vinculación del .menu */
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 1px black; /* sombra de texto: desplazamiento horizontal, desplazamiento vertical, blur, color */
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#menu-bar:checked ~.menu {
+    transform: translateX(0%);
+}
+
+@media(min-width: 680px) {
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+        background: transparent;
+        border: none;
+    }
+
+    header label {display: none;}
+    .menu a {border: none;}
+}
