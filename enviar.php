@@ -14,8 +14,8 @@ try {
     $port = "587";
     $SMTPAuth = "login";
     $SMTPSecure = "tls;";
-    $username = "ukino222@gmail.com";
-    $password = "mulllix374";
+    $username = "@gmail.com";
+    $password = "";
 
     $mail = new PHPMailer\PHPMailer\PHPMailer();
     $mail->isSMTP();
